@@ -18,7 +18,7 @@
         </div>
     
         <div [ngClass]="showDocumentInfo ? 'visible_block' : 'hidden_block' ">
-            <app-document-info (goBackEvent)="showBaseForm()" (sendData)="handleData($event)" ></app-document-info>
+            <app-document-info (goBackEvent)="showBaseForm()" (sendData)="handleData($event)" [docInfo]="docInfo" ></app-document-info>
         <div>
     </div>
 </div>

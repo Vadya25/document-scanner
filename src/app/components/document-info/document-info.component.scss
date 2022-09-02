@@ -21,6 +21,10 @@
     border-bottom: 2px #A49FB4 solid;
     color: #110637;
     outline: 0;
+
+    /* for correct work in IOS(Safari) */
+    -webkit-user-select: auto;
+    user-select: auto;
 }
 
 .data_input:focus {

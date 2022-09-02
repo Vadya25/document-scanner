@@ -53,14 +53,12 @@ export class AppComponent {
     /* get ip adress */
     let ipResult = <{ip: string}> await this.getIPAddress();
     
-    /* fill data object */
-    let data: dataT = {ipAddress: ipResult.ip, userAgent: navigator.userAgent, docName: $event.docName, userName: $event.userName, file: ''}
+    /* prepare data to send */
+    let sendData: dataT = {ipAddress: ipResult.ip, userAgent: navigator.userAgent, docName: $event.docName, userName: $event.userName, file: ''}
 
     /* count current images */
     let indices: number[] = [];
     const imagesCount: number = this.DWObject.HowManyImagesInBuffer;
-    if(!imagesCount) {alert('No images added')};
-
     for(let count=0; count<imagesCount; count++) {
       indices.push(count)
     } 
@@ -68,8 +66,8 @@ export class AppComponent {
     /* convert images to file and than send to server */
     this.DWObject.ConvertToBase64(indices, Dynamsoft.DWT.EnumDWT_ImageType.IT_PDF, (res, indices, type)=>{
       const fileInBase64 = res.getData(0, res.getLength());
-      data.file = fileInBase64;
-      this.sendRequest(data)
+      sendData.file = fileInBase64;
+      this.sendRequest(sendData)
 
     }, ((errorCode, errorString)=>{
       alert(errorString)
@@ -85,7 +83,6 @@ export class AppComponent {
     this.DWObject.RemoveAllImages();
     this.docInfo.docName = '';
     this.docInfo.userName = '';
-    console.log(data)
     this.showDocumentInfo = false;
     alert('Data sent successfully ✅');
   }

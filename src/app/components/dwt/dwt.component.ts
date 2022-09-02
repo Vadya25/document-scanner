@@ -25,8 +25,8 @@ export class DwtComponent implements OnInit {
         exitDocumentScanAfterSave: true
       }
     }
-  }
-  @Output() dwObjectInstance = new EventEmitter<WebTwain>()
+  };
+  @Output() dwObjectInstance = new EventEmitter<WebTwain>();
 
   constructor(
   ) {
@@ -85,15 +85,12 @@ export class DwtComponent implements OnInit {
     objThumbnailViewer.show();
   }
 
-  captureImage() {
+  captureImage(): void {
     if (this.DWObject) {
       this.DWObject.Addon.Camera.scanDocument(this.showVideoConfigs)
         .catch((err) => {
-          alert(err)
+          alert(err);
         })
-        .then((res: any) => {
-          console.log(res)
-        });
     }
   }
 
