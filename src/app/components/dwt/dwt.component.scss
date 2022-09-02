@@ -1,0 +1,25 @@
+.actions {
+
+    background: white;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 32px;
+
+    &-text {
+        color: #A29CB3;
+        font-size: 2.5vh;
+        line-height: 8px;
+    }
+
+    &-image {
+        height: 8vh;
+    }
+
+    &-btns {
+        display: flex;
+    }
+}
+
+.resources {
+    border-radius: 8px;
+}

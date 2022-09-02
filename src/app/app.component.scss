@@ -1,0 +1,54 @@
+.container {
+    height: 100vh;
+}
+
+.header {
+    color: #A49FB4;
+    text-align: start;
+}
+
+.wrapper {
+    height: 84vh;
+    background: #F8F7FA;
+    padding: 2px 16px 32px 16px;
+    margin: auto;
+    /* max-width: 55vh; */
+    border-radius: 8px;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+
+    &-fake {
+        background: #F8F7FA;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border: none;
+        opacity: 0.5;
+
+        &-second {
+            height: 20px;
+            margin: 0px 20px -10px 20px;
+        }
+
+        &-last {
+            height: 30px;
+            margin: 0px 40px -20px 40px;
+        }
+
+        &-box {
+            margin: auto;
+            max-width: 63vh;
+        }
+    }
+}
+
+.visible_block {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    transition: opacity 0.5s linear;
+}
+
+.hidden_block {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}

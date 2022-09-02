@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    background: rgb(225, 217, 252);
+    background: linear-gradient(60deg, rgba(225, 217, 252, 1) 0%, rgba(209, 248, 225, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    overflow: hidden;
+}
+
+/* BUTTONS */
+.btn {
+    background: #110637;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 8px;
+    width: 49%;
+    margin: 0.5em 0 1em 2%;
+}
+
+.btn:disabled {
+    background: #11063769;
+}
+
+.btn:active {
+    background: #716e7e;
+    opacity: 0;
+    transition: all 1.8s
+}
+
+.submit_btn {
+    margin: 16px auto auto;
+    height: 48px;
+}

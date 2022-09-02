@@ -1,0 +1,17 @@
+<form #myForm="ngForm" (ngSubmit)="handleForm()">
+    <div class="data">
+        <div class="data-group">
+            <label for="name" class="data_field">Enter your name</label>
+            <input type="text" [(ngModel)]="docInfo.userName" class="data_input" name="name" id='name' required />
+        </div>
+    
+        <div class="data-group">
+            <label for="document_name" class="data_field">Enter document name</label>
+            <input type="text" [(ngModel)]="docInfo.docName" class="data_input" name="document_name" id='document_name' required />
+        </div>
+    </div>
+    <div class="actions">
+        <button type="button" (click)="back()" class="btn submit_btn">◀ Back</button>
+        <button type="submit" [disabled]="!myForm.valid" class="btn submit_btn">Submit ▶</button>
+    </div>
+</form>

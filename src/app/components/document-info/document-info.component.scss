@@ -1,0 +1,32 @@
+.data {
+    margin: auto;
+
+    &-group {
+        margin: 38px 0px 58px 0px;
+        text-align: start;
+    }
+}
+
+.data_field {
+    color: #A49FB4;
+    font-size: 16px;
+}
+
+.data_input {
+    height: 28px;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 2px #A49FB4 solid;
+    color: #110637;
+    outline: 0;
+}
+
+.data_input:focus {
+    border-bottom: 2px #110637 solid;
+}
+
+.actions {
+    display: flex;
+}
