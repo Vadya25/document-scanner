@@ -25,8 +25,10 @@ Dynamsoft.DWT.Containers = [{ ContainerId: 'dwtcontrolContainer', Width: 350, He
 /// If you need to use multiple keys on the same server, you can combine keys and write like this 
 /// Dynamsoft.DWT.ProductKey = 'key1;key2;key3';
 /// To get a free trial, please visit https://www.dynamsoft.com/customer/license/trialLicense?product=dwt&utm_source=installer.
-Dynamsoft.DWT.ProductKey = 't00986QAAALRVGdNPaZhyaIHHSjsaioiH12xyY+uSusng0MpfKVjIyxSBBg5QSrQrP4i1IiQiw51VpQnKrdiuN5d6AapBSN/1/WIf2tqcXpMwOmejbuowln4jZjKKFo24AWR/Lq8=';
 
+/* Old key first */
+//Dynamsoft.DWT.ProductKey = 't00986QAAALRVGdNPaZhyaIHHSjsaioiH12xyY+uSusng0MpfKVjIyxSBBg5QSrQrP4i1IiQiw51VpQnKrdiuN5d6AapBSN/1/WIf2tqcXpMwOmejbuowln4jZjKKFo24AWR/Lq8=';
+Dynamsoft.DWT.ProductKey = "t01529gIAAKQHDw6B1hUxb/w2mmyjmzT5ynrLqcFcvAqa7hRQZbYl5UzmjmrCzgb9f9qPfY/YHW6VhWMth28M16aX0GfR88VuqOeGERjMJvpRSafiDO/gZUAGgC9yBnbLD1jkcxpVcIAzIAmwbtyA65DfXnEQ0gPOgCTgOqQDQSe7PlPZBLSOkBQCzoAkYIR0oJU+E9X6Bsr6mj4=";
 ///
 //Dynamsoft.DWT.ResourcesPath = 'Resources';
 
